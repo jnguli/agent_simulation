@@ -32,9 +32,9 @@ class World:
 
         self.size = size
 
-    self.grid = [[None for _ in range(size)] for _ in range(size)]
+        self.grid = [[None for _ in range(size)] for _ in range(size)]
 
-    self.agents = [Agent(i) for i in range(num_agents)]
+        self.agents = [Agent(i) for i in range(num_agents)]
 
 
 
@@ -42,9 +42,9 @@ def place_agent(self, agent, position):
 
     x, y = position
 
-self.grid[x][y] = agent
+    self.grid[x][y] = agent
 
-agent.move_to(position)
+    agent.move_to(position)
 
 
 
@@ -111,3 +111,4 @@ for agent in world.agents:
     world.move_agent(agent)
 
 world.display()
+
